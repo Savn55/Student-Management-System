@@ -12,10 +12,10 @@ public class StudentDatabaseApp {
 		Student[] students = new Student[numOfStudent];
 		
 		for (int n=0; n<numOfStudent; n++) {
-			Student stu = new Student();
-			stu.enroll();
-			stu.payTuition();
-			stu.showInfo();
+			students[n] = new Student();
+			students[n].enroll();
+			students[n].payTuition();
+			students[n].showInfo();
 			System.out.println();
 			System.out.println("------------------------");
 		}
